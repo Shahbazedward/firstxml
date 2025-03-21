@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data [
+    <!ELEMENT data (department+)>
+    <!ELEMENT department (dept-name, no-of-employes, avg-salary, floor?, labs?)>
+    <!ELEMENT dept-name (#PCDATA)>
+    <!ELEMENT no-of-employes (#PCDATA)>
+    <!ELEMENT avg-salary (#PCDATA)>
+    <!ELEMENT floor (#PCDATA)>
+    <!ELEMENT labs (#PCDATA)>
+    <!ENTITY cn "Aptech Learning School">
+    <!ENTITY l "North Nazimabad Campus">
+    <!ATTLIST no-of-employes gown-color CDATA "#REQUIRED">
+    <!ATTLIST avg-salary years CDATA "#2000">
+]>
+
+<data>
+<department>
+<dept-name>Accounts &cn; &l;</dept-name>
+<no-of-employes gown-color="green">5</no-of-employes>
+<avg-salary years="2000">65000</avg-salary>
+</department>
+
+<department>
+<dept-name>Academics &cn; &l;</dept-name>
+<no-of-employes gown-color="green">8</no-of-employes>
+<avg-salary years="2000">45000</avg-salary>
+<floor>1st</floor>
+<labs>12</labs>
+</department>
+
+<department>
+<dept-name>H.R &cn; &l;</dept-name>
+<no-of-employes gown-color="green">3</no-of-employes>
+<avg-salary years="2000">80000</avg-salary>
+</department>
+
+
+</data>
